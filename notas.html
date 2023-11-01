@@ -1,0 +1,34 @@
+<!-- Crie um programa que permita ao usuário inserir as notas de alunos (de 0 a 10) em uma disciplina. O programa deve
+continuar pedindo as notas até que o usuário indique que não deseja mais inserir notas. Em seguida, o programa deve
+calcular a média das notas e informar se o aluno foi aprovado (média maior ou igual a 7) ou reprovado. -->
+
+<script>
+  let notas = []
+  let continuar = true
+  let soma = 0
+
+  while (continuar) {
+    let nota = Number(prompt("Digite a nota do aluno (nota de 0 a 10)"))
+
+    if (nota >= 0 && nota <= 10) {
+      notas.push(nota)
+    } else {
+      alert('Nota inválida')
+    }
+
+    continuar = confirm('Deseja incluir mais notas?')
+  }
+
+  for (let nota of notas) {
+    soma += nota
+  }
+
+  const media = soma / notas.length
+
+  if (media >= 7) {
+    console.log(`Aprovado com média: ${media.toFixed(2)}`)
+  } else {
+    console.log(`Reprovado com média: ${media.toFixed(2)}`)
+  }
+
+</script>

@@ -1,0 +1,102 @@
+<script>
+  let listaCompras = ['Maçã', 'Banana', 'Uva', 'Morango', 'Abacaxi']
+
+  let numeros = [1, 2, 3, 4]
+  // let listaCompras2 = new Array()
+
+  console.log(listaCompras[2])
+
+  // console.log(numeros[2])
+
+  console.log(listaCompras.length)
+
+  for (let i = 0; i < listaCompras.length; i++) {
+    console.log(listaCompras[i])
+  }
+
+  let indice = 2
+
+  while (indice < listaCompras.length) {
+    console.log(`While: ${listaCompras[indice]}`)
+    indice++
+  }
+
+
+  for (let item of listaCompras) {
+    console.log(`For of: ${item}`)
+  }
+
+  // listaCompras.push('Laranja')
+
+  // console.log(listaCompras)
+
+  // listaCompras.pop()
+
+  // console.log(listaCompras)
+
+  // listaCompras.shift()
+
+  // console.log(listaCompras)
+
+  // listaCompras.unshift('Ameixa')
+
+  // console.log(listaCompras)
+
+  // let posicao = listaCompras.indexOf('Banana')
+
+  // console.log(posicao)
+
+  // console.log(listaCompras.join(' - '))
+
+  let linguagens = []
+
+  linguagens[0] = "Javascript"
+  linguagens[1] = "Java"
+  linguagens[2] = "Python"
+
+  console.log(linguagens)
+
+
+
+  let matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ]
+
+  for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+      console.log(`Matriz: ${matriz[i][j]}`)
+    }
+  }
+
+  for (let linha of matriz) {
+    for (let elemento of linha) {
+      console.log(`For of: ${linha}`)
+    }
+  }
+
+  // Crie  um array com os anos que o Brasil ganhou a copa
+  // 
+
+  // Interaja com o array utilizando um loop para mostrar
+  // no console O brasil ganhou a copa de 1959...
+
+  let anos = [1991, 2004, 2021]
+
+  for (let ano of anos) {
+    console.log(`Anos que o Grêmio foi rebaixado ${ano}`)
+  }
+
+  for (let fruta of listaCompras) {
+    console.log(fruta)
+
+    if (fruta === 'Uva') {
+      break
+    }
+  }
+
+  listaCompras.forEach((fruta) => {
+    console.log(`ForEach: ${fruta}`)
+  })
+</script>
